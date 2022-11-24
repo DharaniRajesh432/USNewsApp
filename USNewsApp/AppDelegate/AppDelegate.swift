@@ -12,7 +12,6 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         if #available(iOS 15, *) {
             let appearance = UINavigationBarAppearance()
             appearance.configureWithOpaqueBackground()
@@ -20,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             appearance.backgroundColor = UIColor.init(red: 56.0/255.0, green: 48.0/255.0, blue: 56.0/255.0, alpha: 1.0)
             UINavigationBar.appearance().standardAppearance = appearance
             UINavigationBar.appearance().scrollEdgeAppearance = appearance
+            appearance.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+
         }
         return true
     }
