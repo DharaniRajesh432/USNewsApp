@@ -1,5 +1,5 @@
 //
-//  ArticleTableViewCell.swift
+//  DescpTableViewCell.swift
 //  USNewsApp
 //
 //  Created by dharani rajesh on 24/11/22.
@@ -7,12 +7,14 @@
 
 import UIKit
 
-class ArticleTableViewCell: UITableViewCell {
+class DescpTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var imgView: UIImageView!
-    @IBOutlet weak var lblAuthor: UILabel!
+    //    @IBOutlet weak var lblAuthor:UILabel!
+    @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblDescription: UILabel!
-    private var ursString: String = ""
+    @IBOutlet weak var selectedImageView: UIImageView!
+    @IBOutlet weak var lblPublishedAt:UILabel!
+    @IBOutlet weak var lblContent:UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,23 +23,15 @@ class ArticleTableViewCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+        
         // Configure the view for the selected state
     }
-    
-    
     func setCellWithValues(_ article: ArticleViewModel){
-        self.updateUIView(urlToImage: article.urlToImage, author: article.author, description: article.description)
-    }
-    
-    private func updateUIView(urlToImage: String, author: String, description:String){
-        self.lblAuthor.text = author
-        self.lblDescription.text = description
-        
-        guard let coverImgUrl = URL(string: urlToImage) else {
-            self.imgView.image = UIImage(named: "noImageAvailable")
+        guard let coverImgUrl = URL(string: article.urlToImage) else {
+            self.selectedImageView.image = UIImage(named: "noImageAvailable")
             return
         }
-        self.imgView.image = nil
+        //self.selectedImageView.image = nil
         self.getImageDataFrom(url: coverImgUrl)
     }
     
@@ -52,7 +46,7 @@ class ArticleTableViewCell: UITableViewCell {
             }
             DispatchQueue.main.async {
                 if let image = UIImage(data: data) {
-                    self.imgView.image = image
+                    self.selectedImageView.image = image
                 }
             }
             

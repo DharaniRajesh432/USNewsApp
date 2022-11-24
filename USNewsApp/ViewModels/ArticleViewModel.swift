@@ -26,7 +26,7 @@ struct ArticleListViewModel {
 }
 
 struct ArticleViewModel{
-   private let article: Article
+    private let article: Article
 }
 
 extension ArticleViewModel{

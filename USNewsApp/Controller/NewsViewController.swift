@@ -47,6 +47,10 @@ class NewsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
+        let descriptionVC = self.storyboard?.instantiateViewController(withIdentifier: "DescriptionVC") as! DescriptionViewController
+        let articleVM = viewModel.cellForRowAt(index: indexPath.row)
+        descriptionVC.selectedViewModel = articleVM
+        self.navigationController?.pushViewController(descriptionVC, animated: true)
     }
     
 }

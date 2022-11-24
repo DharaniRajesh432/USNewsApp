@@ -28,8 +28,8 @@ struct Article:Decodable {
         self.publishedAt = publishedAt
         self.content = content
     }
-     
+    
     enum CodingKeys: String, CodingKey {
-            case title, author ,description, urlToImage, publishedAt, content
-        }
+        case title, author ,description, urlToImage, publishedAt, content
+    }
 }
