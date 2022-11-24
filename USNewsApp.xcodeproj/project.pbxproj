@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B389C353292FA5FE00F31A9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B389C352292FA5FE00F31A9A /* AppDelegate.swift */; };
 		B389C355292FA5FE00F31A9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B389C354292FA5FE00F31A9A /* SceneDelegate.swift */; };
-		B389C357292FA5FE00F31A9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B389C356292FA5FE00F31A9A /* ViewController.swift */; };
+		B389C357292FA5FE00F31A9A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B389C356292FA5FE00F31A9A /* NewsViewController.swift */; };
 		B389C35A292FA5FE00F31A9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B389C358292FA5FE00F31A9A /* Main.storyboard */; };
 		B389C35D292FA5FE00F31A9A /* USNewsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B389C35B292FA5FE00F31A9A /* USNewsApp.xcdatamodeld */; };
 		B389C35F292FA60000F31A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B389C35E292FA60000F31A9A /* Assets.xcassets */; };
@@ -40,7 +40,7 @@
 		B389C34F292FA5FE00F31A9A /* USNewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = USNewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B389C352292FA5FE00F31A9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B389C354292FA5FE00F31A9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B389C356292FA5FE00F31A9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B389C356292FA5FE00F31A9A /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		B389C359292FA5FE00F31A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B389C35C292FA5FE00F31A9A /* USNewsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = USNewsApp.xcdatamodel; sourceTree = "<group>"; };
 		B389C35E292FA60000F31A9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 		B389C385292FA62200F31A9A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B389C356292FA5FE00F31A9A /* ViewController.swift */,
+				B389C356292FA5FE00F31A9A /* NewsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -278,7 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B389C35D292FA5FE00F31A9A /* USNewsApp.xcdatamodeld in Sources */,
-				B389C357292FA5FE00F31A9A /* ViewController.swift in Sources */,
+				B389C357292FA5FE00F31A9A /* NewsViewController.swift in Sources */,
 				B389C353292FA5FE00F31A9A /* AppDelegate.swift in Sources */,
 				B389C355292FA5FE00F31A9A /* SceneDelegate.swift in Sources */,
 			);
